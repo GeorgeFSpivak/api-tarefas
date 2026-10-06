@@ -41,7 +41,6 @@ public class TarefaService {
             Tarefa tarefa = resultado.get();
 
             tarefa.concluir();
-            tarefaRepository.save(tarefa);
         }
 
         return resultado;
@@ -70,7 +69,6 @@ public class TarefaService {
             Tarefa tarefa = resultado.get();
 
             tarefa.alterarTitulo(novoTitulo);
-            tarefaRepository.save(tarefa);
         }
 
         return resultado;
